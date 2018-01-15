@@ -1,0 +1,46 @@
+.homepage-gallery
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 35px
+
+.footer_homepage
+  display: none
+.homepage-gallery-img
+  max-width: 49%
+  flex-basis: 49%
+  margin-bottom: 2%
+  img
+    width: 100%
+  @media(max-width: 600px)
+    display: none
+.content_wide_homepage
+  max-height: 100vh
+  height: 100vh
+  overflow: hidden
+.homepage-gallery-img_mobile
+  @media(max-width: 600px)
+    display: block
+    width: 100%
+    max-width: none
+    flex-basis: 100%
+    img
+      width: 100%
+
+.homepage-image-wrapper
+  max-width: none
+  height: 100vh
+  margin: 0 auto 25px
+  text-align: center
+  min-height: calc(100vh - 205px)
+  overflow-y: hidden
+  background-image: url('../images/userpics/homepage-image-min.jpg')
+  background-size: cover
+  background-position: bottom
+  background-repeat: no-repeat
+
+.homepage-gallery-img_main
+  max-width: none
+  margin: 0 auto 0
+  width: 90%
+  height: auto

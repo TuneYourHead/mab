@@ -1,0 +1,154 @@
+.process
+  text-align: center
+  margin-bottom: 40px
+
+.process-title
+  font-size: 16px
+  text-transform: uppercase
+  font-family: 'Raleway Regular'
+  display: block
+  padding-top: 35px
+  max-width: 500px
+  margin: 0 auto
+  text-align: center
+  letter-spacing: 0.15px
+  border-top: 1px solid $light-gray
+  &:focus
+    outline: none
+  @media(max-width: 1024px)
+    max-width: 100%
+  &:first-of-type
+    border-top: none
+    padding-top: 0
+    @media(max-width: 600px)
+      border-top: 1px solid $light-gray
+      padding-top: 35px
+
+.process-subtitle
+  display: block
+  width: 100%
+  max-width: 500px
+  font-size: 12px
+  margin: 10px auto
+  padding-bottom: 35px
+  border-bottom: 1px solid $light-gray
+  @media(max-width: 1024px)
+    max-width: 100%
+    margin-bottom: 0
+  &:first-of-type
+    border-bottom: none
+.process-image_full
+  max-width: 100%!important
+section.process_tree-col
+  max-width: 530px
+  margin: 0 auto
+  vertical-align: middle
+  max-height: 1085px
+  overflow: hidden
+  &:after
+    content: ""
+    display: table
+    clear: both
+  @media(max-width: 1024px)
+    max-width: 90vw
+  .process-img
+    max-width: 43%
+    margin-bottom: 0
+    margin-right: 10px
+    margin-top: 0
+    float: left
+    @media(max-width: 1024px)
+      max-width: 42%
+    @media(max-width: 600px)
+      display: flex
+      align-items: flex-start
+      max-width: none
+      max-height: 65vw
+      justify-content: space-between
+      overflow: hidden
+      margin-bottom: 10px
+  img
+    max-width: 55%
+    margin-top: 0
+    margin-bottom: 10px
+    margin-left: 0
+    height: auto
+    @media(max-width: 600px)
+      max-width: 90vw
+
+
+section.process-img
+  img
+    max-width: 100%
+    margin-bottom: 10px
+    @media(max-width: 600px)
+      max-width: 43.5vw
+      margin-right: 10px
+.process-text
+  font-size: 14px
+  line-height: 1.8rem
+  letter-spacing: 0.15px
+  max-width: 530px
+  margin: 25px auto
+  @media(max-width: 1024px)
+    max-width: 90vw
+  &:last-of-type
+    margin-bottom: 50px
+  @media(max-width: 600px)
+    line-height: 1.5rem
+
+.process-img
+  max-width: 530px
+  margin: 20px auto
+  @media(max-width: 1024px)
+    max-width: 90vw
+
+.process_two-col
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 40px auto
+  align-items: flex-start
+  img, div
+    max-width: 49%
+    flex-basis: 49%
+    height: auto
+  &:nth-of-type(2)
+    @media(max-width: 600px)
+      img, div
+        max-width: 100%
+        flex-basis: 100%
+
+.process-steps
+  .process-title
+    margin-top: 35px
+
+.process-list
+  text-align: left
+  margin-left: 4%
+  margin-top: 20px
+
+.process-item
+  margin-bottom: 15px
+  text-transform: uppercase
+  font-size: 14px
+
+
+
+img.process-wider-img
+  flex-basis: 56.4%
+  max-width: 56.4%
+img.process-smaller-img
+  flex-basis: 43.6%
+  max-width: 43.6%
+
+.process_two-col_smaller
+  justify-content: center
+  align-items: flex-start
+  img
+    max-width: 30.5%
+    flex-basis: 30.5%
+    margin-top: 0
+  .process-wider-img
+    flex-basis: 69.5%
+    max-width: 69.5%

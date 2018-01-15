@@ -1,0 +1,78 @@
+.press
+  list-style: none
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-bottom: 20px
+  @media(max-width: 600px)
+    display: block
+    margin-top: 20px
+.press-item_empty
+  opacity: 0
+  @media(max-width: 600px)
+    display: none!important
+.title-wrap
+  flex-basis: 100%
+.press-title
+  font-size: 16px
+  font-family: 'Raleway Regular'
+  display: block
+  padding-top: 35px
+  border-top: 1px solid $light-gray
+  max-width: 50%
+  text-align: center
+  padding-bottom: 35px
+  margin: 35px auto 35px
+  border-bottom: 1px solid $light-gray
+  text-transform: uppercase
+.press-item
+  position: relative
+  min-height: 350px
+  width: 23%
+  flex-basis: 23%
+  margin: 1.5% auto
+  border: 1px solid $light-gray
+  border-radius: 5px
+  padding: 10px 10px 50px 10px
+  text-align: center
+  box-sizing: border-box
+  flex-direction: column
+  text-align: center
+  color: $medium-gray
+  display: flex
+  transition: color 0.2s ease-in-out
+  &:hover
+    color: #9ec6e8
+  @media(max-width: 1024px)
+    width: 47%
+    flex-basis: 47%
+    margin-bottom: 4%
+  @media(max-width: 600px)
+    width: 90%
+    flex-basis: 90%
+    min-height: 400px
+    margin: 0 auto 5%
+.press-item
+  div
+    text-align: center
+    flex: 1 0 auto
+
+
+.press-item-img
+  max-width: 100%
+  margin: auto
+
+.press-item-title
+  font-size: 16px
+  position: absolute
+  bottom: 15px
+  width: 100%
+  text-align: center
+  left: 0
+
+
+
+.press-item-img_centered
+  width: auto
+  height: auto
+  max-width: 200px

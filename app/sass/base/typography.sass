@@ -1,0 +1,160 @@
+@font-face
+  font-family: 'Lato Regular'
+  font-style: normal
+  font-weight: 400
+  src: url('./../fonts/Lato/Lato-Regular.ttf')
+
+@font-face
+  font-family: 'Raleway Regular'
+  font-style: normal
+  font-weight: 400
+  src: url('./../fonts/Raleway/Raleway-Regular.ttf')
+
+@font-face
+  font-family: 'Raleway Medium'
+  font-style: normal
+  font-weight: 400
+  src: url('./../fonts/Raleway/Raleway-Medium.ttf')
+
+@font-face
+  font-family: 'Raleway Bold'
+  font-style: normal
+  font-weight: 400
+  src: url('./../fonts/Raleway/Raleway-Bold.ttf')
+
+//	Headings
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6
+	margin: 0
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6
+	display: inline-block
+
+.gigantic
+  font-size: 110px
+  line-height: 1.09
+  letter-spacing: -2px
+
+.huge, h1
+	font-size: 35px
+	font-weight: lighter
+
+.large, h2
+	font-size: 30px
+	line-height: 1.14
+	font-weight: lighter
+
+.bigger, h3
+	font-size: 26px
+	line-height: 1.38
+	font-weight: lighter
+
+.big, h4
+	font-size: 22px
+	font-weight: lighter
+
+.small, small
+	font-size: 10px
+	line-height: 1.2
+
+.subtitle
+	font-size: 18px
+	margin-bottom: 0
+
+// Basic Text Style
+
+p
+	font-size: 14px
+	line-height: 1.8
+	margin: 8.5px 0
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #e9e8e8
+  border-width: 1px 0 0
+  clear: both
+  margin: 0
+  height: 0
+
+a
+  font-size: 14px
+  text-decoration: none
+  transition: color 0.2s ease-in-out
+  &:hover
+    color: #9ec6e8
+
+
+ul
+	margin: 0
+	padding: 0
+
+form
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+
+label
+  display: block
+  width: 100%
+  flex-basis: 100%
+  text-align: left
+  margin-top: 15px
+  color: #A9A9A9
+  font-family: 'Raleway Regular'
+
+input, textarea
+  display: block
+  width: 100%
+  height: 40px
+  border: 2px solid #e9e8e8
+  border-radius: 5px
+  box-shadow: none
+  margin-top: 5px
+  max-width: 100%
+  font-size: 14px
+  color: #A9A9A9
+  font-family: 'Raleway Regular'
+  text-indent: 10px
+  box-sizing: border-box
+  margin-bottom: 0
+
+.contact-label_name input
+    margin-bottom: 7.5px
+
+textarea
+  height: 87.5px
+  padding-top: 5px
+  resize: none
+  color: #A9A9A9
+  font-family: 'Raleway Regular'
+
+
+input[type="submit"]
+  max-width: 175px
+  border-radius: 0
+  border: none
+  background-color: #9ec6e8
+  color: #fff
+  font-size: 16px
+  font-family: 'Raleway Regular'
+  margin: 0 auto
+  &:hover
+    background-color: lighten(#9ec6e8, 5%)
+
+.g-recaptcha
+    margin: 0 auto
+
+a.disabled
+  pointer-events: none
+  cursor: default
+  &:hover
+    color: #e9e8e8

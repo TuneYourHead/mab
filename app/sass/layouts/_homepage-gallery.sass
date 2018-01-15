@@ -1,0 +1,22 @@
+.homepage-gallery
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 35px
+
+.homepage-gallery-img
+  max-width: 49%
+  flex-basis: 49%
+  margin-bottom: 2%
+  img
+    width: 100%
+  @media(max-width: 600px)
+    display: none
+.homepage-gallery-img_mobile
+  @media(max-width: 600px)
+    display: block
+    width: 100%
+    max-width: none
+    flex-basis: 100%
+    img
+      width: 100%

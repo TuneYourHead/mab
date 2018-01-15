@@ -1,0 +1,118 @@
+.portfolio
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  list-style: none
+  margin-bottom: 40px
+  @media(max-width: 800px)
+    display: block
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)
+    display: block
+.coming-soon
+  cursor: default!important
+  position: relative
+  .portfolio-item-title_hover
+    cursor: default!important
+  &::before
+    position: absolute
+    content: 'coming soon'
+    text-transform: uppercase
+    color: #fff
+    font-size: 22px
+    line-height: 0
+    font-weight: bold
+    top: 50%
+    left: 0
+    width: 100%
+    text-align: center
+    z-index: 10
+  .portfolio-item-link
+    cursor: default
+    pointer-events: none
+    max-height: none
+    display: inline
+    &:hover
+      color: $medium-gray
+
+
+.portfolio-item-link
+  max-height: 32vh
+  overflow: hidden
+  color: $medium-gray
+  width: 32%
+  flex-basis: 32%
+  text-align: center
+  margin: 3% 0 1%
+  position: relative
+  cursor: pointer
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  &:hover
+    .portfolio-item-img
+      filter: brightness(30%)
+      z-index: 100
+  @media(max-width: 1024px)
+    width: 49%
+    flex-basis: 49%
+    max-height: none
+  @media(max-width: 800px)
+    width: 100%
+    flex-basis: 100%
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)
+    width: 100%
+    flex-basis: 100%
+    max-width: none
+    margin: 3% auto 1%
+
+
+
+.portfolio-item-img-wrapper
+  max-height: 211px
+  overflow: hidden
+  flex: 1 0 auto
+  @media(max-width: 1024px)
+    max-height: 29vw
+  @media(max-width: 800px)
+    max-height: 60vw
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)
+    max-height: 400px
+
+.portfolio-item-title
+  width: 100%
+  font-size: 16px
+  font-family: 'Raleway Regular'
+  margin-top: 20px
+  flex: 1 0 auto
+  display: none
+
+.portfolio-item-title_hover
+  position: absolute
+  top: 40%
+  width: 93%
+  left: 3%
+  text-align: center
+  z-index: 1000
+  color: $white
+  font-size: 16px
+  font-family: 'Raleway Regular'
+  cursor: pointer
+
+.portfolio-item-img
+  text-transform: uppercase
+  display: block
+  height: auto
+  width: 100%
+  min-width: 100%
+  position: relative
+  transition: filter 0.3s ease-in-out
+  &::before
+    content: 'coming soon'
+    text-transform: uppercase
+    display: block
+    position: absolute
+    top: calc(50% - 12px)
+    width: 100%
+    text-align: center
+    color: $white
+    font-size: 24px

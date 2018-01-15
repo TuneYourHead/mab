@@ -1,0 +1,62 @@
+body
+  font-family: 'Raleway Regular'
+  color: $medium-gray
+  overflow: hidden
+  img
+    display: none
+
+#preloader
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #fff
+  z-index: 99
+
+#status
+  width: 200px
+  height: 200px
+  position: absolute
+  left: 50%
+  top: 50%
+  background-image: url(../images/loader.gif)
+  background-repeat: no-repeat
+  background-position: center
+  margin: -100px 0 0 -100px
+
+.sticky_bottom
+  display: none
+  position: static
+  margin: 0
+  order: 1
+  flex-basis: 3%
+  text-align: left
+  margin-right: 10px
+  margin-bottom: 0
+  padding-bottom: 0
+  @media(max-width: 1024px)
+    flex-basis: 100%
+    text-align: center
+    order: 1
+.sticky-icon
+  display: block
+  height: auto
+  margin-bottom: -3px
+  img
+    width: 60px
+    margin-bottom: 0
+    @media(max-width: 1024px)
+      margin: 0 auto 10px
+.content
+  min-height: calc(100vh - 215px)
+  max-width: $max-width-global
+  margin: 0 auto
+  @media(max-width: 1040px)
+    max-width: 90%
+
+.footer
+  height: 50px
+
+.header-nav .active-link
+  color: $accent
