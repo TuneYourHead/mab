@@ -66,10 +66,17 @@ hr
 a
   font-size: 14px
   text-decoration: none
+  color: $link-color
   transition: color 0.2s ease-in-out
   &:hover
-    color: #9ec6e8
+    color: lighten($link-color, 20%)
 
 ul
 	margin: 0
 	padding: 0
+
+.btn
+  background-color: $accent
+  border-radius: $global-radius
+  &:hover
+    background-color: lighten($accent, 20%)
