@@ -21,6 +21,7 @@
     "gulp-pug": "*",
     "gulp-rigger": "*",
     "browser-sync": "*",
+    "gulp-autoprefixer": "*",
     "gulp-livereload": "*"
   },
   "devDependencies": {
