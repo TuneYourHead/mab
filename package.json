@@ -1,11 +1,38 @@
 {
   "name": "mab",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello! This is 'my awesome boilerplate'. It is not that awesome yet, but we're trying.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-notify": "2.2.0",
+    "gulp-plumber": "0.2.3",
+    "gulp-sass": "2.3.2",
+    "gulp-sass-lint": "*",
+    "gulp-uglify": "2.1.2",
+    "gulp-watch": "4.3.11",
+    "gulp-cssmin": "*",
+    "gulp-rename": "*",
+    "gulp-pug": "*",
+    "gulp-rigger": "*",
+    "browser-sync": "*",
+    "gulp-livereload": "*"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuneYourHead/mab.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/TuneYourHead/mab/issues"
+  },
+  "homepage": "https://github.com/TuneYourHead/mab#readme"
 }

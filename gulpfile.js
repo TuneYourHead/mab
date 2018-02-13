@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     notify = require("gulp-notify"),
     rigger = require("gulp-rigger"),
     pug = require('gulp-pug'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    livereload = require('gulp-livereload');
 
 var path = {
     build: {
@@ -29,13 +30,13 @@ var path = {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./app"
         }
     });
 });
 
 gulp.task('style:build', function () {
-    gulp.src(path.src.style)
+    return gulp.src(path.src.style)
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         //.pipe(sourcemaps.init())
         .pipe(sass({errLogToConsole: true}))
