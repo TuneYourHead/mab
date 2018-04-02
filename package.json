@@ -22,7 +22,8 @@
     "gulp-rigger": "*",
     "browser-sync": "*",
     "gulp-autoprefixer": "*",
-    "gulp-livereload": "*"
+    "gulp-livereload": "*",
+    "gulp-imagemin": "*"
   },
   "devDependencies": {
     "gulp-livereload": "^3.8.1"

@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     pug = require('gulp-pug'),
     browserSync = require('browser-sync').create(),
     livereload = require('gulp-livereload');
+    imagemin = require('gulp-imagemin');
 
 var path = {
     build: {
@@ -34,6 +35,12 @@ gulp.task('browser-sync', function() {
         }
     });
 });
+
+gulp.task('default', () =>
+    gulp.src('app/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('app/images'))
+);
 
 gulp.task('style:build', function () {
     return gulp.src(path.src.style)
