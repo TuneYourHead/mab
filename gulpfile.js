@@ -36,7 +36,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('default', () =>
+gulp.task('imagemin', () =>
     gulp.src('app/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('app/images'))
@@ -79,4 +79,4 @@ return gulp.src('app//*.pug')
 .pipe(livereload({ start: true }));
 });
 
-gulp.task('default', ['build', 'browser-sync', 'watch', 'views']);
+gulp.task('default', ['build', 'imagemin', 'browser-sync', 'watch', 'views']);
