@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     rigger = require("gulp-rigger"),
     pug = require('gulp-pug'),
     browserSync = require('browser-sync').create(),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-livereload'),
     imagemin = require('gulp-imagemin');
 
 var path = {
